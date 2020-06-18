@@ -303,7 +303,7 @@ div #YouTube::before {
     color: hsl(163, 72%, 41%);
 }
 
-@media (max-width:768px) {
+@media (max-width:414px) {
     :root{
       --small-size: 0.5rem;
     }
@@ -366,22 +366,18 @@ div #YouTube::before {
       margin-top: 16px;
     }
     div #Facebook::before  {
-        width: 328px;
-
+        width: 272px;
     }
     div #Twitter::before {
-        width: 328px;
-
+        width: 272px;
     }
     
     div #Instagram::before {
-        width: 328px;
-
+        width: 272px;
     }
     
     div #YouTube::before {
-        width: 328px;
-
+        width: 272px;
     }
     .bottom-card{
         margin-top: 16px;
