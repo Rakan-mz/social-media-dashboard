@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="fadein">
+
+  <div class="container-fluid top-container">
+    <div class="container row">
+      <div class="col-md-8 dashbord-title">
+        <h1 class="heaser-one">Social Media Dashboard</h1>
+        <span>Total Followers: 23,004
+        </span>
+        <hr>
+      </div>
+
+      <div class="col-md-4 dark-mode row">
+        <div class="col-8 mode-text">
+          <p>Dark Mode</p>
+        </div>
+        <div class="col-4 mode-ticker">
+          <label class="switch">
+            <input type="checkbox">
+            <!-- <button type="button" name="mode-button">click me</button> -->
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+
+
+      <div class="container container-one">
+
+        <div class="row pt-2" style="text-align: center;">
+
+          <div id="Facebook" class="col-md-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title">
+                  <img src="images/icon-facebook.svg" alt="" class="logo-icon">
+                  <p class="account">@nathanf
+                  </p>
+                </div>
+                <h1 class="card-text">1987</h1>
+                <h6 class="card-subtitle mb-2 text-muted follower-p">Followers</h6>
+                <div>
+                  <img src="images/icon-up.svg" alt="" class="newuser-img">
+                  <p class="newuser-p"> 12 Today</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div id="Twitter" class="col-md-3 ">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title">
+                  <img src="images/icon-twitter.svg" alt="" class="logo-icon">
+                  <p class="account">@nathanf
+                  </p>
+                </div>
+                <h1 class="card-text">1044</h1>
+                <h6 class="card-subtitle mb-2 text-muted follower-p">Followers</h6>
+                <div>
+                  <img src="images/icon-up.svg" alt="" class="newuser-img">
+                  <p class="newuser-p"> 99 Today</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="Instagram" class="col-md-3 ">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title">
+                  <img src="images/icon-instagram.svg" alt="" class="logo-icon">
+                  <p class="account">@realnathanf</p>
+                </div>
+                <h1 class="card-text">11k</h1>
+                <h6 class="card-subtitle mb-2 text-muted follower-p">Followers</h6>
+                <div>
+                  <img src="images/icon-up.svg" alt="" class="newuser-img">
+                  <p class="newuser-p">1099 Today</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="YouTube" class="col-md-3 ">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title">
+                  <img src="images/icon-youtube.svg" alt="" class="logo-icon">
+                  <p class="account">Nathan F.
+                  </p>
+                </div>
+                <h1 class="card-text">8239</h1>
+                <h6 class="card-subtitle mb-2 text-muted follower-p">Subscribers </h6>
+                <div>
+                  <img src="images/icon-down.svg" alt="" class="lostuser-img">
+                  <p class="lostuser-p"> 144 Today</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <div class="container">
+          <div>
+            <h1 class="heaser-one">Overview - Today</h1>
+          </div>
+
+          <div class="row bottom-row">
+
+            <div class="col-md-3">
+              <div class="bottom-card">
+                <div class="bc-top row">
+                  <div class="col-7 padding-res">
+                    <p class="bc-top-p">Page Views</p>
+                  </div>
+                  <div class="col-5 bc-top-img padding-res">
+                    <img src="images/icon-facebook.svg" alt="facebook">
+                  </div>
+                </div>
+                <div class="bc-bottom row">
+                  <div class="col-7 padding-res">
+                    <h2 class="bc-bottom-heading">87</h2>
+                  </div>
+                  <div class="col-5 bc-bottom-right-div padding-res">
+                    <img src="images/icon-up.svg" alt="down" class="bc-bottom-img">
+                    <p class="bc-bottom-p">3%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="bottom-card">
+                <div class="bc-top row">
+                  <div class="col-7 padding-res">
+                    <p class="bc-top-p">Likes</p>
+                  </div>
+                  <div class="col-5 bc-top-img padding-res">
+                    <img src="images/icon-facebook.svg" alt="facebook">
+                  </div>
+                </div>
+                <div class="bc-bottom row">
+                  <div class="col-7 padding-res">
+                    <h2 class="bc-bottom-heading">52</h2>
+                  </div>
+                  <div class="col-5 bc-bottom-right-div padding-res">
+                    <img src="images/icon-down.svg" alt="down" class="bc-bottom-img">
+                    <p class="bc-bottom-p-down">2%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="bottom-card">
+                <div class="bc-top row">
+                  <div class="col-7 padding-res">
+                    <p class="bc-top-p">Likes</p>
+                  </div>
+                  <div class="col-5 bc-top-img padding-res">
+                    <img src="images/icon-instagram.svg" alt="Instagram">
+                  </div>
+                </div>
+                <div class="bc-bottom row">
+                  <div class="col-7 padding-res">
+                    <h2 class="bc-bottom-heading">5462</h2>
+                  </div>
+                  <div class="col-5 bc-bottom-right-div padding-res">
+                    <img src="images/icon-up.svg" alt="down" class="bc-bottom-img">
+                    <p class="bc-bottom-p">2257%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="bottom-card">
+                <div class="bc-top row">
+                  <div class="col-7 padding-res">
+                    <p class="bc-top-p">Profile Views</p>
+                  </div>
+                  <div class="col-5 bc-top-img padding-res">
+                    <img src="images/icon-instagram.svg" alt="Instagram">
+                  </div>
+                </div>
+                <div class="bc-bottom row">
+                  <div class="col-7 padding-res">
+                    <h2 class="bc-bottom-heading">52</h2>
+                  </div>
+                  <div class="col-5 bc-bottom-right-div padding-res">
+                    <img src="images/icon-up.svg" alt="down" class="bc-bottom-img">
+                    <p class="bc-bottom-p">1375%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+          <div class="row bottom-row">
+
+            <div class="col-md-3">
+              <div class="bottom-card">
+                <div class="bc-top row">
+                  <div class="col-7 padding-res">
+                    <p class="bc-top-p">Retweets</p>
+                  </div>
+                  <div class="col-5 bc-top-img padding-res">
+                    <img src="images/icon-twitter.svg" alt="Twitter">
+                  </div>
+                </div>
+                <div class="bc-bottom row">
+                  <div class="col-7 padding-res">
+                    <h2 class="bc-bottom-heading">117</h2>
+                  </div>
+                  <div class="col-5 bc-bottom-right-div padding-res">
+                    <img src="images/icon-up.svg" alt="down" class="bc-bottom-img">
+                    <p class="bc-bottom-p">303%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="bottom-card">
+                <div class="bc-top row">
+                  <div class="col-7 padding-res">
+                    <p class="bc-top-p">Likes</p>
+                  </div>
+                  <div class="col-5 bc-top-img padding-res">
+                    <img src="images/icon-twitter.svg" alt="Twitter">
+                  </div>
+                </div>
+                <div class="bc-bottom row">
+                  <div class="col-7 padding-res">
+                    <h2 class="bc-bottom-heading">507</h2>
+                  </div>
+                  <div class="col-5 bc-bottom-right-div padding-res">
+                    <img src="images/icon-up.svg" alt="down" class="bc-bottom-img">
+                    <p class="bc-bottom-p">553%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="bottom-card">
+                <div class="bc-top row">
+                  <div class="col-7 padding-res">
+                    <p class="bc-top-p">Likes</p>
+                  </div>
+                  <div class="col-5 bc-top-img padding-res">
+                    <img src="images/icon-youtube.svg" alt="YouTube">
+                  </div>
+                </div>
+                <div class="bc-bottom row">
+                  <div class="col-7 padding-res">
+                    <h2 class="bc-bottom-heading">107</h2>
+                  </div>
+                  <div class="col-5 bc-bottom-right-div padding-res">
+                    <img src="images/icon-down.svg" alt="down" class="bc-bottom-img">
+                    <p class="bc-bottom-p-down">19%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="bottom-card">
+                <div class="bc-top row">
+                  <div class="col-7 padding-res">
+                    <p class="bc-top-p">Total Views</p>
+                  </div>
+                  <div class="col-5 bc-top-img padding-res">
+                    <img src="images/icon-youtube.svg" alt="YouTube">
+                  </div>
+                </div>
+                <div class="bc-bottom row">
+                  <div class="col-7 padding-res">
+                    <h2 class="bc-bottom-heading">1407</h2>
+                  </div>
+                  <div class="col-5 bc-bottom-right-div padding-res">
+                    <img src="images/icon-down.svg" alt="down" class="bc-bottom-img">
+                    <p class="bc-bottom-p-down">12%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="#">Rakan-mz</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+
+</html>
