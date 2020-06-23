@@ -387,3 +387,87 @@ div #YouTube::before {
         margin: -13px 0px 10px 0px; 
     }
   }
+@media (max-width:768px) {
+    :root{
+      --small-size: 0.5rem;
+    }
+    .container-one{
+        height: 500px; 
+        margin-top: 0px;
+    }
+  
+    hr {
+      border-top: 1px solid var(--text-color);
+      visibility: visible;
+    }
+
+    .dark-mode {
+        padding: 0px 0 0 0;
+        text-align: right;
+        margin-left: 0;
+        margin-right: 0;
+    }
+  
+    .mode-div {
+      padding-top: 0;
+    }
+  
+    .dashbord-title {
+      padding-bottom: 0;
+    }
+  
+    .mode-text {
+      text-align: left;
+    }
+  
+    .card-div {
+      margin-bottom: 2rem;
+      height: 16rem;
+    }
+  
+    .back-card {
+      height: 16.3rem;
+    }
+  
+    .card {
+      height: 16rem;
+      margin-bottom: 30px;
+    }
+  
+    .newuser-div {
+      margin: 12px 0;
+    }
+  
+    .bottom-container {
+      padding-top: 2%;
+    }
+  
+    .bottom-row {
+      margin-top: 0;
+    }
+  
+    .bottom-card-div {
+      margin-top: 16px;
+    }
+    div #Facebook::before  {
+        width: 328px;
+    }
+    div #Twitter::before {
+        width: 328px;
+    }
+    
+    div #Instagram::before {
+        width: 328px;
+    }
+    
+    div #YouTube::before {
+        width: 328px;
+    }
+    .bottom-card{
+        margin-top: 16px;
+
+    }
+    .attribution{
+        margin: -13px 0px 10px 0px; 
+    }
+  }
