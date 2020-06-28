@@ -155,7 +155,7 @@ h5 {
     border-radius: 0.5rem;
 }
 
-div #Facebook::before {
+/* div #Facebook::before {
     content: '';
     box-shadow: inset 0px 8px 0px 0px var(--Facebook--color);
     height: 100px;
@@ -164,41 +164,43 @@ div #Facebook::before {
     left: 15px;
     position: absolute;
     border-radius: .3rem;
+} */
+div .Facebook::before {
+    content: '';
+    height: 4px;
+    display: flex;
+    background-color: var(--Facebook--color);
+    border-radius: 0.5rem 0.5rem 0 0;
+    margin-top: -4px;
 }
 
-div #Twitter::before {
+div .Twitter::before {
     content: '';
-    box-shadow: inset 0px 8px 0px 0px var(--Twitter--color);
-    height: 100px;
-    width: 247.5px;
-    top: -4px;
-    left: 15px;
-    position: absolute;
-    border-radius: .3rem;
+    height: 4px;
+    display: flex;
+    background-color: var(--Twitter--color);
+    border-radius: 0.5rem 0.5rem 0 0;
+    margin-top: -4px;
 }
 
-div #Instagram::before {
+div .Instagram::before {
     content: '';
-    box-shadow: inset 0px 8px 0px 0px var(--Instagram--color);
-    height: 100px;
-    width: 247.5px;
-    top: -4px;
-    left: 15px;
-    position: absolute;
-    border-radius: .3rem;
+    height: 4px;
+    display: flex;
+    background-color: var(--Twitter--color);
+    border-radius: 0.5rem 0.5rem 0 0;
+    margin-top: -4px;
     background: rgb(223, 73, 150);
     background: linear-gradient(270deg, rgba(223, 73, 150, 1) 0%, rgba(253, 196, 104, 1) 100%);
 }
 
-div #YouTube::before {
+div .YouTube::before {
     content: '';
-    box-shadow: inset 0px 8px 0px 0px var(--YouTube--color);
-    height: 100px;
-    width: 247.5px;
-    top: -4px;
-    left: 15px;
-    position: absolute;
-    border-radius: .3rem;
+    height: 4px;
+    display: flex;
+    background-color: var(--YouTube--color);
+    border-radius: 0.5rem 0.5rem 0 0;
+    margin-top: -4px;
 }
 
 .card-title {
@@ -303,7 +305,102 @@ div #YouTube::before {
     color: hsl(163, 72%, 41%);
 }
 
-@media (max-width:414px) {
+/* @media (max-width:414px) */
+@media only screen and (max-width: 767px) {
+    :root{
+      --small-size: 0.5rem;
+    }
+    .row {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .container-one{
+        height: 500px; 
+        margin-top: 0px;
+    }
+  
+    hr {
+      border-top: 1px solid var(--text-color);
+      visibility: visible;
+    }
+
+    .dark-mode {
+        padding: 0px 0 0 0;
+        text-align: right;
+        margin-left: 0;
+        margin-right: 0;
+    }
+  
+    .mode-div {
+      padding-top: 0;
+    }
+  
+    .dashbord-title {
+      padding-bottom: 0;
+    }
+  
+    .mode-text {
+      text-align: left;
+    }
+  
+    .card-div {
+      margin-bottom: 2rem;
+      height: 16rem;
+    }
+  
+    .back-card {
+      height: 16.3rem;
+    }
+  
+    .card {
+      height: 16rem;
+      margin-bottom: 30px;
+    }
+  
+    .newuser-div {
+      margin: 12px 0;
+    }
+  
+    .bottom-container {
+      padding-top: 2%;
+    }
+  
+    .bottom-row {
+      margin-top: 0;
+    }
+  
+    .bottom-card-div {
+      margin-top: 16px;
+    }
+    /* div #Facebook::before  {
+        width: 267px;
+    }
+    div #Twitter::before {
+        width: 267px;
+    }
+    
+    div #Instagram::before {
+        width: 267px;
+    }
+    
+    div #YouTube::before {
+        width: 267px;
+    } */
+    .bottom-card{
+        margin-top: 16px;
+
+    }
+    .attribution{
+        margin: -13px 0px 10px 0px; 
+        font-size: 10px !important;
+    }
+  }
+/* @media (max-width:768px)  */
+/* @media only screen and (max-width: 500px) 
+    {
     :root{
       --small-size: 0.5rem;
     }
@@ -366,90 +463,6 @@ div #YouTube::before {
       margin-top: 16px;
     }
     div #Facebook::before  {
-        width: 272px;
-    }
-    div #Twitter::before {
-        width: 272px;
-    }
-    
-    div #Instagram::before {
-        width: 272px;
-    }
-    
-    div #YouTube::before {
-        width: 272px;
-    }
-    .bottom-card{
-        margin-top: 16px;
-
-    }
-    .attribution{
-        margin: -13px 0px 10px 0px; 
-    }
-  }
-@media (max-width:768px) {
-    :root{
-      --small-size: 0.5rem;
-    }
-    .container-one{
-        height: 500px; 
-        margin-top: 0px;
-    }
-  
-    hr {
-      border-top: 1px solid var(--text-color);
-      visibility: visible;
-    }
-
-    .dark-mode {
-        padding: 0px 0 0 0;
-        text-align: right;
-        margin-left: 0;
-        margin-right: 0;
-    }
-  
-    .mode-div {
-      padding-top: 0;
-    }
-  
-    .dashbord-title {
-      padding-bottom: 0;
-    }
-  
-    .mode-text {
-      text-align: left;
-    }
-  
-    .card-div {
-      margin-bottom: 2rem;
-      height: 16rem;
-    }
-  
-    .back-card {
-      height: 16.3rem;
-    }
-  
-    .card {
-      height: 16rem;
-      margin-bottom: 30px;
-    }
-  
-    .newuser-div {
-      margin: 12px 0;
-    }
-  
-    .bottom-container {
-      padding-top: 2%;
-    }
-  
-    .bottom-row {
-      margin-top: 0;
-    }
-  
-    .bottom-card-div {
-      margin-top: 16px;
-    }
-    div #Facebook::before  {
         width: 328px;
     }
     div #Twitter::before {
@@ -470,4 +483,4 @@ div #YouTube::before {
     .attribution{
         margin: -13px 0px 10px 0px; 
     }
-  }
+  } */
